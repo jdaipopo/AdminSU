@@ -1,6 +1,6 @@
 *** Setting ***
 Library    SeleniumLibrary
-Resource    ${CURDIR}/../adminSU/setting.robot
+Resource    ../adminSU/setting.robot
 
 *** Test Cases ***
 Open Web Admin Browser

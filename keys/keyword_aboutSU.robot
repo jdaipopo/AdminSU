@@ -1,6 +1,7 @@
 *** Setting ***
 Library    SeleniumLibrary
-Resource    ${CURDIR}/../variables.robot
+Library    OperatingSystem
+Resource    ../variables.robot
 
 *** Keywords ***
 Click Tab AboutSU 

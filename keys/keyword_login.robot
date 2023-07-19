@@ -1,6 +1,6 @@
 *** Setting ***
 Library    SeleniumLibrary
-Resource    ${CURDIR}/../variables.robot
+Resource    ../variables.robot
 
 *** Keywords ***
 Open Web Admin Browser
