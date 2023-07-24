@@ -11,8 +11,10 @@ Check that it is an AboutSU Page
     Page Should Contain    About SU
 Create Topic of About SU success
     Click Element    ${Create Topic}
+Choose Banner Image
     File Should Exist       ${CURDIR}/file/tony.jpeg
     Choose File     basic_bannerImg      ${CURDIR}/file/tony.jpeg
+Hi
     Input Text    basic_topic_topicName    หัวข้อเกี่ยวกับมหาวิทยาลัยศิลปากร
     Input Text    basic_topic_topicNameEng    Topic about Silpakorn University
     Click Element    ${Text and images article}

@@ -2,8 +2,6 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${Email}    pawutinan_s@su.ac.th
-${Password}    S1tt1d3tlm78
 
 # Login Admin
 ${Click Button sign in with SSO}    xpath=//*[@id="root"]/div/div[2]/div/div/div/div/div/button/span
