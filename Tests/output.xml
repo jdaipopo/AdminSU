@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on darwin)" generated="20230724 15:59:14.940" rpa="false" schemaversion="4">
+<suite id="s1" name="webAdminSU" source="/Users/hoya/Desktop/automateTest/adminSU/Tests/webAdminSU.robot">
+<test id="s1-t1" name="Open Web Admin Browser" line="6">
+<kw name="Open Web Admin Browser SU smartplus" library="keyword_login">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://smartplus-dev.su.ac.th/admin/auth</arg>
+<arg>browser=chrome</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230724 15:59:15.096" level="INFO">Opening browser 'chrome' to base url 'https://smartplus-dev.su.ac.th/admin/auth'.</msg>
+<status status="PASS" starttime="20230724 15:59:15.096" endtime="20230724 15:59:26.004"/>
+</kw>
+<status status="PASS" starttime="20230724 15:59:15.095" endtime="20230724 15:59:26.005"/>
+</kw>
+<status status="PASS" starttime="20230724 15:59:15.095" endtime="20230724 15:59:26.005"/>
+</test>
+<test id="s1-t2" name="Sign in with SSO success" line="9">
+<kw name="Click Button sign in with sso" library="keyword_login">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click Button sign in with SSO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230724 15:59:26.006" level="INFO">Clicking element 'xpath=//*[@id="root"]/div/div[2]/div/div/div/div/div/button/span'.</msg>
+<status status="PASS" starttime="20230724 15:59:26.005" endtime="20230724 15:59:30.210"/>
+</kw>
+<status status="PASS" starttime="20230724 15:59:26.005" endtime="20230724 15:59:30.210"/>
+</kw>
+<kw name="Fill in your Email pawutinan_s@su.ac.th" library="keyword_login" sourcename="Fill in your Email ${Email}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="i0116"]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230724 15:59:30.210" endtime="20230724 15:59:36.045"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="i0116"]</arg>
+<arg>${Email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230724 15:59:36.045" level="INFO">Typing text 'pawutinan_s@su.ac.th' into text field 'xpath=//*[@id="i0116"]'.</msg>
+<status status="PASS" starttime="20230724 15:59:36.045" endtime="20230724 15:59:36.487"/>
+</kw>
+<status status="PASS" starttime="20230724 15:59:30.210" endtime="20230724 15:59:36.487"/>
+</kw>
+<kw name="Click Button Next" library="keyword_login">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click Next, Yes, Sign in}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230724 15:59:36.487" level="INFO">Clicking element 'xpath=//*[@id="idSIButton9"]'.</msg>
+<status status="PASS" starttime="20230724 15:59:36.487" endtime="20230724 15:59:37.051"/>
+</kw>
+<status status="PASS" starttime="20230724 15:59:36.487" endtime="20230724 15:59:37.051"/>
+</kw>
+<kw name="Fill in your Password S1tt1d3tlm78" library="keyword_login" sourcename="Fill in your Password ${Password}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="i0118"]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20230724 15:59:39.415" level="INFO">Suppressing StaleElementReferenceException from Selenium.</msg>
+<status status="PASS" starttime="20230724 15:59:37.051" endtime="20230724 15:59:39.735"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>xpath=//*[@id="i0118"]</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230724 15:59:39.736" level="INFO">Typing password into text field 'xpath=//*[@id="i0118"]'.</msg>
+<msg timestamp="20230724 15:59:39.958" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230724 15:59:40.029" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230724 15:59:39.735" endtime="20230724 15:59:40.029"/>
+</kw>
+<status status="PASS" starttime="20230724 15:59:37.051" endtime="20230724 15:59:40.029"/>
+</kw>
+<status status="PASS" starttime="20230724 15:59:26.005" endtime="20230724 15:59:40.029"/>
+</test>
+<status status="PASS" starttime="20230724 15:59:14.941" endtime="20230724 15:59:40.030"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="webAdminSU">webAdminSU</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230724 15:59:15.093" level="ERROR">Error in file '/Users/hoya/Desktop/automateTest/adminSU/Keywords/keyword_login.robot' on line 3: Resource file '../variables.robot' does not exist.</msg>
+<msg timestamp="20230724 15:59:15.094" level="ERROR">Error in file '/Users/hoya/Desktop/automateTest/adminSU/Keywords/keyword_aboutSU.robot' on line 4: Resource file '../variables.robot' does not exist.</msg>
+</errors>
+</robot>
