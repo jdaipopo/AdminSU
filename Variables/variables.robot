@@ -2,7 +2,6 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-
 # Login Admin
 ${Click Button sign in with SSO}    xpath=//*[@id="root"]/div/div[2]/div/div/div/div/div/button/span
 ${Click Next, Yes, Sign in}    xpath=//*[@id="idSIButton9"]

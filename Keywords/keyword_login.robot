@@ -1,6 +1,6 @@
 *** Setting ***
 Library    SeleniumLibrary
-Resource    ../variables.robot
+Resource    ../Variables/variables.robot
 
 *** Keywords ***
 Open Web Admin Browser SU smartplus
@@ -16,6 +16,7 @@ Click Button Next
 Fill in your Password ${Password}
     Wait Until Element Is Visible    xpath=//*[@id="i0118"]    10s
     Input Password    xpath=//*[@id="i0118"]    ${Password} 
+
 Click Button Sign in
     Click Element    ${Click Next, Yes, Sign in}
 Click Button Yes
