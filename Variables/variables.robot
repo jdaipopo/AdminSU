@@ -18,3 +18,6 @@ ${Close Preview}    xpath=/html/body/div[2]/div/div[3]/div/div/div[1]/div[1]/but
 ${Save button}    xpath=//*[@id="root"]/div/div/section/section/header/div[2]/div/div[4]/button
 ${Cancel button}    xpath=/html/body/div[3]/div/div[2]/div/div[2]/div/div/div[2]/button[1]
 ${Comfirm button}    xpath=/html/body/div[3]/div/div[2]/div/div[2]/div/div/div[2]/button[2]
+
+# News
+${My news}    xpath=//*[@id="root"]/div/div/section/section/main/div/div/div/div[1]/div[1]/div/div[2]
